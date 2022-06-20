@@ -1,0 +1,82 @@
+*{
+  box-sizing:border-box;
+ }
+ body {
+ margin:0;
+ font-style:normal;
+ font-weight:normal;
+ color: #000;
+ background: radial-gradient(red,blue,yellow,brown);
+ }
+ .container{
+ width:1260px;
+ padding: 15px 30px;
+ margin:0 auto;
+ }
+ 
+ .visually-hidden{
+ position:absolute;
+ width:1px;
+ height:1px;
+ margin:-1px;
+ padding:0;
+ overflow:hidden;
+ border:0;
+ clip: rect(0 0 0 0);
+ }
+ 
+ .top-list{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display:grid;
+ grid-template-columns: repeat(3,3fr);
+  gap: 30px;
+ }
+ .first{
+  width: 300px;
+  height: 200px;
+  background-color: rgb(226, 201, 201);
+  background-image: url(../img/car.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .one:hover{
+    transform: scale(1.1);
+    transition:0.6s ease;
+ }
+ .two:hover{
+   transform: scale(0.8);
+    transition:0.6s ease;
+ }
+ .three:hover{
+   transform: scale(0.5);
+   transition:0.7s ease;
+ }
+
+.four:hover{
+   transform: rotate(90deg );
+   transition:1s ease;
+
+}
+.five:hover{
+   transform: rotate(-180deg );
+   transition:1s ease;
+}
+.six:hover{
+   transform: rotate(360deg );
+   transition:2s ease;
+}
+.seven:hover{
+   transform: translateX(40px);
+   transition:1s ease;
+}
+.eight:hover{
+   transform: translateY(-30px);
+   transition:1s ease; 
+}
+.nine:hover{
+   transform: translateY(30px);
+   transition:1s ease; 
+}
